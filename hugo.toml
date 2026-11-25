@@ -1,0 +1,64 @@
+baseURL = 'https://scienceonfire.github.io/hrchamorro/'
+languageCode = 'en-us'
+title = 'Harold R. Chamorro'
+theme = 'LoveIt'
+[params]
+  version = '0.2.X'
+  defaultTheme = 'auto'
+  [params.home]
+    [params.home.profile]
+      enable = true
+      avatarURL = 'images/profile.svg'
+      title = 'Harold R. Chamorro'
+      subtitle = 'Power Systems · Applied Mathematics · Control Theory'
+      social = true
+    [params.home.posts]
+      enable = true
+  [params.social]
+    GitHub = 'ScienceOnFire'
+    GoogleScholar = 'ZKoYASsAAAAJ'
+  [params.search]
+    enable = true
+    type = 'lunr'
+  [params.page.math]
+    enable = true
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+[markup.goldmark.renderer]
+  unsafe = true
+[menu]
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'research'
+    name = 'Research'
+    url = '/research/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'publications'
+    name = 'Publications'
+    url = '/publications/'
+    weight = 30
+  [[menu.main]]
+    identifier = 'laboratories'
+    name = 'Labs'
+    url = '/laboratories/'
+    weight = 40
+  [[menu.main]]
+    identifier = 'library'
+    name = 'Library'
+    url = '/library/'
+    weight = 50
+  [[menu.main]]
+    identifier = 'posts'
+    name = 'Blog'
+    url = '/posts/'
+    weight = 60
+  [[menu.main]]
+    identifier = 'cv'
+    name = 'CV'
+    url = '/cv/'
+    weight = 70
